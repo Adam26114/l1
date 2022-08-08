@@ -55,4 +55,6 @@ body{
     padding:0 20px;
 
     overflow:hidden;
+
+    transition:height 0.3s ease-in-out;
 }
