@@ -19,7 +19,7 @@ body{
     cursor: pointer;
 }
 
-.acctitle:hover{
+.acctitle:hover,.active{
     background-color:steelblue;
 }
 
@@ -37,7 +37,22 @@ body{
     float:right;
 }
 
+/* .active.acctitle::after{
+    content:'\f068';
+} */
+
+.active::after{
+    content:'\f068';
+}
 
 .accontent{
+    height:0;
+    background-color:#f4f4f4;
+    text-indent:50px;
+    text-align:justify;
+    font-size:14px;
 
+    padding:0 20px;
+
+    overflow:hidden;
 }
