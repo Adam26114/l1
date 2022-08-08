@@ -1,12 +1,12 @@
-var getacctitle = document.getElementsByClassName("acctitle");
-// console.log(getacctitle);    //HTML Collection
-var getacccontent = document.querySelectorAll(".accontent");
-// console.log(getacccontent);  //NodeList
+var getacctitles = document.getElementsByClassName("acctitle");
+// console.log(getacctitles);    //HTML Collection
+var getacccontents = document.querySelectorAll(".accontent");
+// console.log(getacccontents);  //NodeList
 
-for(var x = 0 ; x < getacctitle.length ; x++ ){
+for(var x = 0 ; x < getacctitles.length ; x++ ){
     // console.log(x);
 
-    getacctitle[x].addEventListener('click',function(e){
+    getacctitles[x].addEventListener('click',function(e){
         // console.log(e.target);
         // console.log(this);
 
@@ -21,6 +21,10 @@ for(var x = 0 ; x < getacctitle.length ; x++ ){
             getcontent.style.height = getcontent.scrollHeight + "px";
         }
 
-
     });
+
+    if(getacctitles[x].classList.contains("active")){
+        getacccontents[x].style.height = getacccontents[x].scrollHeight+ "px";
+    }
+
 }
