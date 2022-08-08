@@ -23,6 +23,21 @@ body{
     background-color:steelblue;
 }
 
+.acctitle::after{
+    content:'\f067'; /* + */
+    font-family:"Font Awesome 5 Free";
+
+    /* 
+    position: absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%); 
+    */
+
+    float:right;
+}
+
+
 .accontent{
 
 }
