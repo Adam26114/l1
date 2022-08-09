@@ -31,7 +31,9 @@ function scrollpoint(){
     // console.log(getfinal);
     
     var getfinal = Math.round(( getscrolltop / calcheight ) * 100 );
-    console.log(getfinal);
+    // console.log(getfinal);
+
+    getprogressbar.style.width = `${getfinal}%`;
 
 
 
