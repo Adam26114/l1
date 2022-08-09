@@ -6,5 +6,10 @@ window.onscroll = function(){
 };
 
 function scrollpoint(){
-    console.log('i am working');
-}
+    // console.log('i am working');
+
+    var getscrolltop = document.documentElement.scrollTop;
+    console.log(getscrolltop);
+
+};
+
