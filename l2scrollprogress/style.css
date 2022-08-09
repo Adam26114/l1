@@ -34,3 +34,29 @@ body{
     padding:50px 0;
     margin:100px auto;
 }
+
+@media print{
+    
+    /* .noprint{
+        display:none;
+    } */
+
+    *{
+        visibility: hidden;
+    }
+
+    .printarea *{
+        visibility:visible;
+    }
+
+    .header{
+        position:static;
+    }
+
+    .pagebrake{
+
+        /* page-break-before:always; */
+        page-break-after:always;
+    }
+
+}

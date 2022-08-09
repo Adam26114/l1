@@ -35,5 +35,9 @@ function scrollpoint(){
 
     getprogressbar.style.width = `${getfinal}%`;
 
+   
 };
 
+function printme(){
+        window.print();
+};
