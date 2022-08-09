@@ -6,9 +6,9 @@
     <link href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" rel="icon" type="image/png">
     <!-- fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- custom js -->
-    <link href="./style.css" rel="stylesheet"/>
-    <link href="./print.css" rel="stylesheet"/>
+    <!-- custom js -->                     <!-- default --> 
+    <link href="./style.css" rel="stylesheet" media="all"/>
+    <link href="./print.css" rel="stylesheet" media="print"/>
 </head>
 <body>
 
@@ -25,7 +25,7 @@
     
     <section class="content">
         
-        <button type="button" class="noprint" onclick="printme()"><i class="fas fa-print"></i></button>
+        <button type="button" class="print-btn" onclick="printme()"><i class="fas fa-print"></i></button>
 
         <div class="container printarea">
 
