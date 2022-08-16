@@ -98,3 +98,20 @@ body{
 .d-grid .btn:hover{
     opacity:1;
 }
+
+#btn-closescreen{
+    display:none;
+}
+
+
+:fullscreen{
+    background-color:#777;
+}
+
+:-ms-fullscreen{
+    background-color:#777;
+}
+
+:-webkit-full-screen{
+    background-color:#777;
+}

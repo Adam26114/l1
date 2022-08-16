@@ -19,3 +19,32 @@ window.onclick = function(e){
         getmodal.style.display = "none";
     }
 };
+
+
+var getde = document.documentElement;
+
+// console.log(getde);
+
+getbtnfullscreen.addEventListener("click",function(){
+    if(getde.requestFullscreen){
+        getde.requestFullscreen();
+    }else if(getde.msRequestFullscreen){
+        getde.msRequestFullscreen();
+    }else if(getde.webkitRequestFullscreen){
+        getde.webkitRequestFullscreen();
+    }
+
+    getbtnclosescreen.style.display = "inline-block"
+});
+
+getbtnclosescreen.addEventListener('click',function(){
+    if(document.exitFullscreen){
+        document.exitFullscreen();
+    }else if(document.msExitFullscreen){
+        document.msExitFullscreen();
+    }else if(document.webkitExitFullscreen){
+        document.webkitExitFullscreen();
+    }
+
+    getbtnclosescreen.style.display = "none";
+})
